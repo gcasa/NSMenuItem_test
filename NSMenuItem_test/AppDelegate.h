@@ -8,7 +8,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-
-
+{
+    IBOutlet NSMenuItem *testItem;
+}
 @end
 

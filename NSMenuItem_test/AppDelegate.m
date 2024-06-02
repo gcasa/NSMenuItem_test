@@ -16,6 +16,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    NSLog(@"Test Item = %@", testItem);
+    NSLog(@"Test item key equiv = %@", [testItem keyEquivalent]);
+    NSLog(@"Test item key equiv mask = %ld", (unsigned long)[testItem keyEquivalentModifierMask]);
 }
 
 
