@@ -19,6 +19,16 @@
     NSLog(@"Test Item = %@", testItem);
     NSLog(@"Test item key equiv = %@", [testItem keyEquivalent]);
     NSLog(@"Test item key equiv mask = %ld", (unsigned long)[testItem keyEquivalentModifierMask]);
+
+    // The values below are based on tests on macOS Sonoma...
+    if ([testItem keyEquivalentModifierMask] == 0)
+    {
+        NSLog(@"keyEquivalentModifierMask = 0, correct");
+    }
+    else
+    {
+        NSLog(@"FAIL: keyEquivalentModifierMask != 0, INCORRECT");
+    }
 }
 
 
